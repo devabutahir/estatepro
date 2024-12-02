@@ -1,0 +1,224 @@
+/*------Footer Section Start--------*/
+/*------Footer Section Start--------*/
+.footer-section {
+	overflow: hidden;
+	position: relative;
+	background: url(../../assets/images/footer/footer-bg.png) no-repeat center center;
+	background-size: cover;
+	&::before{
+		position: absolute;
+		inset: 0;
+		content: "";
+		background: rgba(#000, 0.7);
+	}
+}
+.footer-top {
+	position: relative;
+	.widget-items {
+		.footer-head {
+			margin-bottom: 30px;
+			.title {
+				font-size: 24px;
+				font-weight: 700;
+				color: var(--white-color);
+			}
+			.footer-logo{
+				width: 143px;
+				display: block;
+				img{
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.content-area {
+			.footer-recent-post{
+				li{
+					display: flex;
+					align-items: center;
+					&:not(:last-child){
+						margin-bottom: 15px;
+					}
+					&:nth-child(2){
+						margin-top: -1px;
+					}
+					.thumb{
+						margin-right: 10px;
+						img{
+							border-radius: 5px;
+							width: 80px;
+							height: 70px;
+						}
+					}
+					.cont{
+						.a-link{
+							display: block;
+							font-size: 19px;
+							font-weight: 500;
+							margin-bottom: 3px;
+							transition: all 0.3s;
+							&:hover{
+								color: var(--secoundary-color);
+							}
+						}
+						span{
+							font-size: 16px;
+							color: var(--secoundary-color);
+						}
+					}
+				}
+			}
+			p {
+				font-size: 18px;
+				line-height: 1.5;
+				color: var(--white-color);
+			}
+			.footer-contact-list {
+				li {
+					display: flex;
+					align-items: center;
+					&:not(:last-child) {
+						margin-bottom: 15px;
+					}
+					.icon {
+						width: 40px;
+						height: 40px;
+						border: 1px solid var(--icon-color);
+						border-radius: 25px;
+						text-align: center;
+						line-height: 40px;
+						margin-right: 12px;
+						i {
+							color: var(--icon-color);
+						}
+					}
+				}
+			}
+			.quick-link {
+				li {
+					&:not(:last-child) {
+						margin-bottom: 12px;
+					}
+					a {
+						color: var(--white-color);
+						font-size: 18px;
+						transition: all 0.5s;
+						position: relative;
+						&::before{
+							position: absolute;
+							content: "";
+							top: 12px;
+							left: 0px;
+							opacity: 0;
+							width: 15px;
+							height: 2px;
+							background: var(--secoundary-color);
+							border-radius: 50%;
+							transition: all 0.5s;
+						}
+						&:hover {
+							color: var(--secoundary-color);
+							margin-left: 19px;
+							&::before{
+								position: absolute;
+								content: "";
+								top: 12px;
+								left: -18px;
+								opacity: 1;
+								width: 15px;
+								height: 2px;
+								background: var(--secoundary-color);
+								border-radius: 50%;
+							}
+						}
+					}
+				}
+			}
+			.footer-social {
+				display: flex;
+				align-items: center;
+				li {
+					&:not(:last-child) {
+						margin-right: 13px;
+					}
+					a {
+						transition: all 0.5s;
+						&:hover{
+							i{
+								color: var(--secoundary-color);
+							}
+						}
+						i {
+							color: var(--secoundary-color);
+							transition: all 0.5s;
+							font-size: 20px;
+						}
+					}
+				}
+			}
+		}
+		p {
+			font-size: 18px;
+			margin-bottom: 25px;
+		}
+		.hellow{
+			li{
+				display: flex;
+				align-items: center;
+				.icon{
+					width: 40px;
+					height: 40px;
+					line-height: 35px;
+					text-align: center;
+					border-radius: 5px;
+					border: 1px solid var(--secoundary-color);
+				}
+				a{
+					width: calc(100% - 40px);
+					color: var(--white-color);
+					font-size: 18px;
+					padding-left: 10px;
+				}
+				margin-bottom: 15px;
+			}
+		}
+	}
+}
+.border-area{
+	border-top: 1px solid #6a5f5f;
+	position: relative;
+}
+.footer-bottom {
+	position: relative;
+	display: flex;
+	padding: 25px 0;
+	align-items: center;
+	justify-content: space-between;
+	p {
+		font-size: 18px;
+		color: var(--white-color);
+		a{
+			color: var(--secoundary-color);
+		}
+	}
+	.footer-bottom-link {
+		display: flex;
+		align-items: center;
+		li {
+			&:not(:last-child) {
+				margin-right: 18px;
+			}
+			a {
+				color: var(--secoundary-color);
+				font-size: 18px;
+				font-weight: 400;
+				transition: all 0.3s;
+				&:hover {
+					color: var(--white-color);
+				}
+			}
+		}
+	}
+}
+/*------Footer Section End--------*/
+/*------Footer Section End--------*/

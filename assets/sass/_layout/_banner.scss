@@ -1,0 +1,176 @@
+/*------Banner Section Start--------*/
+/*------Banner Section Start--------*/
+.banner-section {
+	background: url(../../assets/images/banner/banner-bg.png) no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+	padding: 170px 0 220px;
+	position: relative;
+	&::before{
+		position: absolute;
+		inset: 0;
+		content: "";
+		background:rgba(#F0F8FF, 0.6);
+	}
+	.banner-shape{
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 100%;
+		max-width: 780px;
+		img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.shape{
+	position: absolute;
+	top: 12%;
+	left: -3%;
+	animation: 10s RightiLeft linear infinite;
+}
+.customshape{
+	position: absolute;
+	top: 12%;
+	right: 0%;
+	animation: 10s RightiLeft linear infinite;
+}
+.customshape2{
+	position: absolute;
+	bottom: 20%;
+	opacity: 0.6;
+	left: 0%;
+	animation: 7s RightiLeft2 linear infinite;
+}
+.shape2{
+	position: absolute;
+	bottom: 20%;
+	opacity: 0.6;
+	right: -2%;
+	animation: 7s RightiLeft2 linear infinite;
+}
+.shape3{
+	position: absolute;
+	top: 50%;
+	left: -7%;
+	animation: 5s RightiLeft3 linear infinite;
+}
+.shape4{
+	position: absolute;
+	top: 30%;
+	right: -5%;
+	animation: 5s RightiLeft4 linear infinite;
+}
+.d3-vector{
+	position: absolute;
+	top: 15%;
+	left: 50%;
+	max-width: 200px;
+	animation: 7s rounded linear infinite;
+	img{
+		width: 100%;
+		object-fit: contain;
+	}
+	transform: translate(-50%);
+}
+.banner-content{
+	position: relative;
+	h1 {
+		color: var(--head-color);
+		font-size: 76px;
+		margin-bottom: 30px;
+	}
+	p {
+		font-size: 24px;
+		font-weight: 500;
+		margin-bottom: 35px;
+	}
+}
+.banner-thumb{
+	width: 100%;
+	text-align: right;
+	position: relative;
+	img{
+		max-width: 100%;
+	}
+	.star1{
+		position: absolute;
+		top: 15%;
+		left: 5%;
+		animation: zoominout 3s linear infinite;
+	}
+	.star3{
+		position: absolute;
+		bottom: 20%;
+		left: 15%;
+		animation: zoominout 3s linear infinite;
+	}
+	.star2{
+		position: absolute;
+		bottom: 4%;
+		right: 0%;
+		animation: zoominout2 3s linear infinite;
+	}
+}
+/*--Breadcumd Banner--*/
+.banner-section.breadcumd-banner {
+	padding: 160px 0 90px;
+	position: relative;
+	background: url(../../assets/images/about/about-banner.png) no-repeat center center;
+	background-size: cover;
+	&::before{
+		position: absolute;
+		inset: 0;
+		content: "";
+		background:rgba(#F0F8FF, 0.4);
+	}
+	.bread-bg {
+		position: absolute;
+		inset: 0;
+		content: "";
+	}
+	.breadcumd-wrapper {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		.left-content {
+			color: var(--head-color);
+			font-size: 57px;
+		}
+		.right-content {
+			display: flex;
+			align-items: center;
+			li {
+				font-size: 18px;
+				position: relative;
+				&:not(:last-child) {
+					margin-right: 42px;
+				}
+				&:not(:first-child)::before {
+					position: absolute;
+					right: 100%;
+					content: "";
+					margin-right: 15px;
+					top: 4px;
+					background: url(../../assets/images/breadcumd/arrow.png)
+						no-repeat;
+					background-size: contain;
+					width: 13px;
+					height: 15px;
+					margin-top: 3px;
+				}
+				a{
+					color: var(--head-color);
+					transition: all 0.4s;
+					&:hover{
+						color: var(--secoundary-color);
+					}
+				}
+			}
+		}
+	}
+}
+/*------Banner Section End--------*/
+/*------Banner Section End--------*/

@@ -1,0 +1,143 @@
+/*----About Section Start-----*/
+.about-section{
+	background: url(../../assets/images/banner/banner-bg.png) no-repeat center center;
+	background-size: cover;
+	overflow: hidden;
+	background-attachment: fixed;
+	position: relative;
+	&::before{
+		position: absolute;
+		inset: 0;
+		z-index: -1;
+		content: "";
+		background:rgba(#F0F8FF, 0.6);
+	}
+}
+.about-content{
+	position: relative;
+	.house-namewrapper{
+		li{
+			display: flex;
+			align-items: center;
+			&:not(:last-child){
+				margin-bottom: 20px;
+			}
+			.icon{
+				background: var(--white-color);
+				width: 90px;
+				height: 90px;
+				line-height: 80px;
+				border-radius: 5px;
+				text-align: center;
+				border: 1px solid var(--secoundary-color);
+				img{
+					width: 55px;
+					height: 55px;
+				}
+			}
+			.cont{
+				width: calc(100% - 100px);
+				padding-left: 20px;
+				.title{
+					font-size: 18px;
+					font-weight: 500;
+					color: var(--head-color);
+					margin-bottom: 5px;
+				}
+				p{
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+.about-thumb{
+	position: relative;
+	max-width: 100%;
+    img{
+        width: 100%;
+    }
+	.arrow-right{
+		width: 100px;
+		position: absolute;
+		top: 10%;
+		z-index: -1;
+		right: 18%;
+		img{
+			width: 100%;
+		}
+	}
+	.arrow-left{
+		width: 120px;
+		position: absolute;
+		bottom: 10%;
+		z-index: -1;
+		left: 18%;
+		img{
+			width: 100%;
+		}
+	}
+}
+
+//progresss bar Area
+.vel-about-wrrapper{
+	.about-two{
+		display: flex;
+		justify-content: space-around;
+		svg{
+			margin-right: 50px;
+		}
+	}
+	.content-strategy{
+		display: flex;
+		justify-content: space-around;
+		text-align: center;
+		margin-top: 8px;
+		.pro{
+			font-size: 24px;
+			font-weight: 600;
+			color: var(--head-color);
+		}
+	} 
+}
+
+svg.radial-progress {
+	height: auto;
+	max-width: 160px;
+	transform: rotate(-90deg);
+	width: 100%;
+}
+.text-pro{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	color: var(--head-color);
+}
+svg.radial-progress circle {
+	fill: rgba(0,0,0,0);
+	stroke: #fff;
+	stroke-dashoffset: 219.91148575129; /* Circumference */
+	stroke-width: 2;
+}
+svg.radial-progress circle.incomplete {
+	opacity: 0.25;
+}
+svg.radial-progress circle.complete {
+	stroke-dasharray: 219.91148575129; /* Circumference */
+}
+svg.radial-progress text {
+	fill: #000;
+	font-size: 13px;
+	text-anchor: middle;
+}
+svg.radial-progress:nth-of-type(6n+1) circle {
+	stroke: var(--primary-color);
+}
+svg.radial-progress:nth-of-type(6n+2) circle {
+	stroke: var(--secoundary-color);
+}
+
+svg.radial-progress:nth-of-type(6n+3) circle {
+	stroke: var(--head-color);
+}
+/*----About Section End-----*/
