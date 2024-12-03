@@ -45,7 +45,7 @@
 					margin-bottom: 5px;
 				}
 				p{
-					font-size: 18px;
+					font-size: 16px;
 				}
 			}
 		}
@@ -58,6 +58,7 @@
         width: 100%;
     }
 	.arrow-right{
+		animation: updown 2s linear infinite;
 		width: 100px;
 		position: absolute;
 		top: 10%;
@@ -68,6 +69,7 @@
 		}
 	}
 	.arrow-left{
+		animation: updown 2s linear infinite;
 		width: 120px;
 		position: absolute;
 		bottom: 10%;
@@ -78,7 +80,11 @@
 		}
 	}
 }
-
+@keyframes updown {
+	50%{
+		transform: translateY(-10px);
+	}
+}
 //progresss bar Area
 .vel-about-wrrapper{
 	.about-two{

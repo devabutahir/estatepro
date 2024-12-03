@@ -343,7 +343,7 @@ p {
   margin-bottom: 5px;
 }
 .about-content .house-namewrapper li .cont p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .about-thumb {
@@ -354,6 +354,7 @@ p {
   width: 100%;
 }
 .about-thumb .arrow-right {
+  animation: updown 2s linear infinite;
   width: 100px;
   position: absolute;
   top: 10%;
@@ -364,6 +365,7 @@ p {
   width: 100%;
 }
 .about-thumb .arrow-left {
+  animation: updown 2s linear infinite;
   width: 120px;
   position: absolute;
   bottom: 10%;
@@ -374,6 +376,11 @@ p {
   width: 100%;
 }
 
+@keyframes updown {
+  50% {
+    transform: translateY(-10px);
+  }
+}
 .vel-about-wrrapper .about-two {
   display: flex;
   justify-content: space-around;
@@ -812,7 +819,7 @@ svg.radial-progress:nth-of-type(6n+3) circle {
   font-weight: 500;
   font-size: 16px;
   display: block;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 .header-wrapper .main-menu li .sub-menu li:not(:last-child) {
   border-bottom: 1px solid rgba(18, 19, 21, 0.1215686275);
@@ -1315,7 +1322,7 @@ svg.radial-progress:nth-of-type(6n+3) circle {
   text-align: center;
 }
 .service-item .service-inner .service-thumb {
-  width: 90px;
+  width: 70px;
   margin: 0 auto 25px;
   transition: all 0.3s;
 }
@@ -1334,6 +1341,9 @@ svg.radial-progress:nth-of-type(6n+3) circle {
 .service-item .service-inner p {
   font-size: 18px;
   margin-bottom: 22px;
+}
+.service-item .service-inner:hover {
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.03);
 }
 .service-item:hover .choose-inner .choose-thumb {
   transform: scale(1.1);
@@ -1441,7 +1451,8 @@ svg.radial-progress:nth-of-type(6n+3) circle {
   left: 4%;
 }
 .feature-items .feature-thumb .l-btn .cmn--btn {
-  padding: 10px 20px;
+  padding: 8px 18px 12px;
+  font-size: 14px;
 }
 .feature-items .feature-thumb .r-btn {
   position: absolute;
@@ -1449,7 +1460,8 @@ svg.radial-progress:nth-of-type(6n+3) circle {
   right: 4%;
 }
 .feature-items .feature-thumb .r-btn .cmn--btn-2 {
-  padding: 10px 20px;
+  padding: 8px 18px 11px;
+  font-size: 14px;
   color: var(--head-color);
 }
 .feature-items .feature-thumb .r-btn .cmn--btn-2:hover {
@@ -1723,6 +1735,8 @@ svg.radial-progress:nth-of-type(6n+3) circle {
   left: 4%;
 }
 .listing-items .top-select .cmn--btn {
+  padding: 8px 18px 10px;
+  font-size: 14px;
   background: var(--white-color);
   color: var(--head-color);
 }
@@ -2075,6 +2089,14 @@ svg.radial-progress:nth-of-type(6n+3) circle {
   text-align: center;
   line-height: 32px;
   padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-item .team-content .team-contact li .icon img {
+  width: 24px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .team-item .team-content .team-contact li a {
   padding-left: 10px;
@@ -2613,12 +2635,11 @@ svg.radial-progress:nth-of-type(6n+3) circle {
 .blog-items .thumb .nice-date {
   background: var(--primary-color);
   border-radius: 4px;
-  padding: 12px 15px;
+  padding: 8px 18px;
   color: var(--white-color);
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 500;
   text-align: center;
-  width: 170px;
   position: absolute;
   bottom: -4%;
   left: 0;
